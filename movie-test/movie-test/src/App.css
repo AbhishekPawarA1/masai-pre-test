@@ -1,0 +1,98 @@
+#displaymovies {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 10px;
+    }
+    #card {
+        background: rgba(255, 255, 255, 0.787);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px;
+    }
+    img {
+        width: 100%;
+        height: 350px;
+        border-radius: 10px;
+    }
+    h1 {
+        text-align: center;
+        color: white;
+    }
+    #main-head{
+      color: black;
+    }
+    input {
+        width: 100%;
+        max-width: 400px;
+        height: 25px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: auto;
+    }
+    button {
+        background: black;
+        color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        cursor: pointer;
+    }
+    button:hover {
+        transform: scale(1.05);
+    }
+    #center {
+        margin: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    #text-center {
+        text-align: center;
+        margin: auto;
+    }
+    #moviesearch {
+        padding: 10px;
+        font-size: 20px;
+        border: 2px solid #130c0c;
+        border-radius: 4px;
+        
+    }
+    
+    /* Media Queries */
+    @media (max-width: 768px) {
+        #displaymovies {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        input {
+            width: 90%;
+        }
+        #center {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #displaymovies {
+            grid-template-columns: 1fr;
+        }
+        h1 {
+            font-size: 20px;
+        }
+        input {
+            width: 90%;
+        }
+        #center {
+            width: 90%;
+        }
+    }
